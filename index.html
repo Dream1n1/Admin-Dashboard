@@ -4,186 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="header">
-        <div class="search">
-            <div class="searchIcon"></div>
-            <div class="searchBar"></div>
-        </div>
-        <div class="profile">
-            <div class="notif"></div>
-            <div class="sideUsrIcon"></div>
-            <div class="sideUser">Morgan Oakley</div>
-        </div>
-        <div class="greetingUser">
-            <div class="usrIcon"></div>
-            <div class="greeting">Hi there,</div>
-            <div class="user">Morgan Oakley (@morgan)</div>
-        </div>
-        <div class="actions">
-            <div>New</div>
-            <div>Upload</div>
-            <div>Share</div>
-        </div>
-    </div>
-
-    <div class="sidebar">
-        <div class="title">
-            <div class="dashboardIcon"></div>
-            <h1 class="dashboard">Dashboard</h1>
-        </div>
-
-        <div class="sideOne">
-            <div class="home">
-                <div class="homeIcon"></div>
-                <div>Home</div>
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+                <input class="search-bar">
             </div>
             <div class="profile">
-                <div class="profileIcon"></div>
-                <div>Profile</div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg>
+                <img src="https://art.pixilart.com/ef297ad789a1.png" alt="Profile Picture">
+                <div class="sideUser">Morgan Oakley</div>
             </div>
-            <div class="messages">
-                <div class="messagesIcon"></div>
-                <div>Messages</div>
+            <div class="greetingUser">
+                <img src="https://art.pixilart.com/ef297ad789a1.png" alt="Profile Picture">
+                <div class="greeting">Hi there,</div>
+                <div class="user">Morgan Oakley (@morgan)</div>
             </div>
-            <div class="history">
-                <div class="historyIcon"></div>
-                <div>History</div>
-            </div>
-            <div class="tasks">
-                <div class="tasksIcon"></div>
-                <div>Tasks</div>
-            </div>
-            <div class="communities">
-                <div class="communitiesIcon"></div>
-                <div>Communities</div>
+            <div class="actions">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
         </div>
-
-        <div class="sideTwo">
-            <div class="settings">
-                <div class="settingsIcon"></div>
-                <div>Settings</div>
+    
+        <div class="sidebar">
+            <div class="title">
+                <svg class="dashboardIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24">
+                    <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" fill="white"/>
+                </svg>
+                <h1 class="dashboard">Dashboard</h1>
             </div>
-            <div class="support">
-                <div class="supportIcon"></div>
-                <div>Support</div>
+    
+            <div class="sideOne">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+                    <a href="#">Home</a>
+                </div>
+                <div>
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M17.13,17C15.92,18.85 14.11,20.24 12,20.92C9.89,20.24 8.08,18.85 6.87,17C6.53,16.5 6.24,16 6,15.47C6,13.82 8.71,12.47 12,12.47C15.29,12.47 18,13.79 18,15.47C17.76,16 17.47,16.5 17.13,17Z" /></svg>
+                    <a href="#">Profile</a>
+                </div>
+                <div>
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,2A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H6L2,22V4C2,2.89 2.9,2 4,2H20M4,4V17.17L5.17,16H20V4H4M6,7H18V9H6V7M6,11H15V13H6V11Z" /></svg>
+                    <a href="#">Messages</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></svg>
+                    <a href="#">History</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z" /></svg>
+                    <a href="#">Tasks</a>
+                </div>
+                <div>
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" /></svg>
+                    <a href="#">Communities</a>
+                </div>
             </div>
-            <div class="privacy">
-                <div class="privacyIcon"></div>
-                <div>Privacy</div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="content">
-        <div class="projectsContainer">
-            <h3 class="projectsTitle">Your Projects</h3>
-            <div class="projects">
-                <div class="element1">
-                    <h3>Super Cool Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam dictum lorem sed imperdiet iaculis. Nunc eu suscipit sem. 
-                        Cras ut cursus ligula, iaculis porttitor mauris.
-                    </p>
-                    <div class="elementsIcon">
-                        <div class="elementIcon1"></div>
-                        <div class="elementIcon2"></div>
-                        <div class="elementIcon3"></div>
-                    </div>
+    
+            <div class="sideTwo">
+                <div>
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg>
+                    <a href="#">Settings</a>
                 </div>
-                <div class="element2">
-                    <h3>Less Cool Project</h3>
-                    <p>Duis commodo nulla a tellus ornare, in viverra enim sagittis. Vivamus congue neque orci. Vestibulum sit amet ex quis nulla imperdiet placerat. Nulla pharetra quis mi ac dapibus.</p>
-                    <div class="elementsIcon">
-                        <div class="elementIcon1"></div>
-                        <div class="elementIcon2"></div>
-                        <div class="elementIcon3"></div>
-                    </div>
+                <div>
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" /></svg>
+                    <a href="#">Support</a>
                 </div>
-                <div class="element3">
-                    <h3>Impossible App</h3>
-                    <p>Pellentesque ut lacus mauris. Nulla sagittis et mauris vestibulum vestibulum. Nunc bibendum, arcu vel accumsan fringilla, odio orci auctor velit, non vestibulum neque quam sit amet est. Aliquam convallis bibendum ipsum, at porttitor ante mollis nec.</p>
-                    <div class="elementsIcon">
-                        <div class="elementIcon1"></div>
-                        <div class="elementIcon2"></div>
-                        <div class="elementIcon3"></div>
-                    </div>
-                </div>
-                <div class="element4">
-                    <h3>Easy Peasy App</h3>
-                    <p>Nullam rutrum consectetur nisl, vitae eleifend massa convallis a. Mauris sit amet vulputate enim. Cras tristique tellus eu magna auctor gravida.</p>
-                    <div class="elementsIcon">
-                        <div class="elementIcon1"></div>
-                        <div class="elementIcon2"></div>
-                        <div class="elementIcon3"></div>
-                    </div>
-                </div>
-                <div class="element5">
-                    <h3>Ad Blocker</h3>
-                    <p>Quisque rhoncus fringilla nulla, non iaculis purus vestibulum eu. Donec ex ligula, auctor in tristique a, accumsan id velit. Phasellus mauris turpis, congue a leo vitae.</p>
-                    <div class="elementsIcon">
-                        <div class="elementIcon1"></div>
-                        <div class="elementIcon2"></div>
-                        <div class="elementIcon3"></div>
-                    </div>
-                </div>
-                <div class="element6">
-                    <h3>Money Maker</h3>
-                    <p>Aenean semper magna vel ullamcorper facilisis. Etiam ut congue eros. Nulla laoreet nisi ut leo tristique, non tincidunt nibh vestibulum. Fusce condimentum finibus nibh at volutpat.</p>
-                    <div class="elementsIcon">
-                        <div class="elementIcon1"></div>
-                        <div class="elementIcon2"></div>
-                        <div class="elementIcon3"></div>
-                    </div>
+                <div>
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z" /></svg>
+                    <a href="#">Privacy</a>
                 </div>
             </div>
     
         </div>
-
-        <div class="announcementsContainer">
-            <h3 class="annoucementsTitle">Annoucements</h3>
-            <div class="annoucements">
-                <div class="announcement1">
-                    <h4>Site Maintenance</h4>
-                    <p>Mauris sollicitudin mi eros, a accumsan velit ultricies at. Aliquam sed diam neque.</p>
+    
+        <div class="content">
+            <div class="projectsContainer">
+                <h3 class="contentTitle">Your Projects</h3>
+                <div class="projects">
+                    <div class="element">
+                        <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nullam dictum lorem sed imperdiet iaculis.
+                        </p>
+                        <div class="elementsIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <h4>Less Cool Project</h4>
+                        <p>Duis commodo nulla a tellus ornare, in viverra enim sagittis. Vivamus congue neque orci.</p>
+                        <div class="elementsIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <h4>Impossible App</h4>
+                        <p>Odio orci auctor velit, non vestibulum neque quam sit amet est. Aliquam convallis bibendum ipsum, at porttitor ante mollis nec.</p>
+                        <div class="elementsIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <h4>Easy Peasy App</h4>
+                        <p>Nullam rutrum consectetur nisl, vitae eleifend massa convallis a. Mauris sit amet vulputate enim.</p>
+                        <div class="elementsIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <h4>Ad Blocker</h4>
+                        <p>Quisque rhoncus fringilla nulla, non iaculis purus vestibulum eu.</p>
+                        <div class="elementsIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <h4>Money Maker</h4>
+                        <p>Aenean semper magna vel ullamcorper facilisis. Etiam ut congue eros.</p>
+                        <div class="elementsIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="announcement2">
-                    <h4>Community Share Day</h4>
-                    <p>Integer eget orci nulla, aenean faucibus lectus ac lacinia dapibus.</p>
-                </div>
-                <div class="announcement3">
-                    <h4>Updated Privacy Policy</h4>
-                    <p>Vivamus euismod lobortis nulla, sed facilisis neque feugiat quis. Phasellus elementum tincidunt sem quis mollis.</p>
+        
+            </div>
+    
+            <div class="announcementsContainer">
+                <h3 class="contentTitle">Annoucements</h3>
+                <div class="annoucements">
+                    <div class="announcement">
+                        <h4>Site Maintenance</h4>
+                        <p>Mauris sollicitudin mi eros, a accumsan velit ultricies at.</p>
+                    </div>
+                    <div class="announcement">
+                        <h4>Community Share Day</h4>
+                        <p>Integer eget orci nulla, aenean faucibus lectus ac lacinia dapibus.</p>
+                    </div>
+                    <div class="announcement">
+                        <h4>Updated Privacy Policy</h4>
+                        <p>Vivamus euismod lobortis nulla, sed facilisis neque feugiat quis.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="trending">
-            <h3 class="trendingTitle">Trending</h3>
-            <div class="TrendingUsers">
-                <div class="trendingUser">
-                    <div class="usrProfile"></div>
-                    <div class="user">@tegan</div>
-                    <div class="projectName">World Peace Maker</div>
-                </div>
-                <div class="trendingUser">
-                    <div class="usrProfile"></div>
-                    <div class="user">@morgan</div>
-                    <div class="projectName">Super Cool Project</div>
-                </div>
-                <div class="trendingUser">
-                    <div class="usrProfile"></div>
-                    <div class="user">@kendall</div>
-                    <div class="projectName">Life Changing App</div>
-                </div>
-                <div class="trendingUser">
-                    <div class="usrProfile"></div>
-                    <div class="user">@alex</div>
-                    <div class="projectName">No Traffic Maker</div>
+    
+            <div class="trending">
+                <h3 class="contentTitle">Trending</h3>
+                <div class="trendingUsers">
+                    <div class="trendingUser">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgv-OTIZFq4vgV-pN5dJEKzox2aDB1aiaYGQ&usqp=CAU" alt="">
+                        <div class="trndUser">@tegan</div>
+                        <div class="projectName">World Peace Maker</div>
+                    </div>
+                    <div class="trendingUser">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBwiBsvJEcKqvrWLq2KS__w7fpYF9i8NlxA&usqp=CAU" alt="">
+                        <div class="trndUser">@morgan</div>
+                        <div class="projectName">Super Cool Project</div>
+                    </div>
+                    <div class="trendingUser">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                        <div class="trndUser">@kendall</div>
+                        <div class="projectName">Life Changing App</div>
+                    </div>
+                    <div class="trendingUser">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUc4uG4ILGtPHBblHV8v4FRm-z3t8Oe_v6g&usqp=CAU" alt="">
+                        <div class="trndUser">@alex</div>
+                        <div class="projectName">No Traffic Maker</div>
+                    </div>
                 </div>
             </div>
         </div>
